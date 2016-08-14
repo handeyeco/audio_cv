@@ -1,7 +1,7 @@
 {
-  "name": "Audio_Resume",
+  "name": "Audio_CV",
   "version": "1.0.0",
-  "description": "A resume for my audio work.",
+  "description": "A CV for my audio work.",
   "main": "index.js",
   "scripts": {
     "watch-sass": "node-sass --watch src/styles/main.scss dist/styles/main.css",
