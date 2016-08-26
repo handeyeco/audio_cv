@@ -1,3 +1,58 @@
-.profile-img {
-  width: 100%;
-  border: 2em solid grey; }
+body {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Times, Baskerville, Georgia, serif; }
+
+h2, h3 {
+  font-size: 1.5em;
+  margin: 2em 0 0.5em 0; }
+
+h1 {
+  margin-bottom: 0.75em;
+  position: relative; }
+
+h1:before {
+  content: "";
+  position: absolute;
+  bottom: -0.3em;
+  right: -1em;
+  width: 2em;
+  height: 5px;
+  background-color: #337ab7;
+  z-index: -1; }
+
+h2:before {
+  content: "";
+  position: absolute;
+  bottom: -0.5em;
+  left: -0.3em;
+  width: 2em;
+  height: 5px;
+  background-color: #800000;
+  z-index: -1; }
+
+h4 {
+  margin-left: 0.75em; }
+
+p, ul {
+  margin-left: 2em;
+  margin-bottom: 0.25em; }
+
+a {
+  margin-left: 3em; }
+
+.title-card {
+  display: inline-block;
+  margin: 8em 0; }
+  .title-card p {
+    text-align: right; }
+
+.right-container {
+  padding: 1em;
+  margin: auto; }
+
+.profile-image {
+  position: fixed;
+  height: 100vh;
+  max-width: 100%; }
