@@ -18,20 +18,18 @@ h1:before {
   position: absolute;
   bottom: -0.4em;
   right: -1em;
-  width: 2em;
   height: 5px;
   background-color: #337ab7;
-  z-index: -1; }
+  animation: 1.5s ease 1s red-stretch forwards; }
 
 h2:before {
   content: "";
   position: absolute;
   bottom: -0.5em;
   left: -0.3em;
-  width: 2em;
   height: 5px;
   background-color: #800000;
-  z-index: -1; }
+  animation: 1.5s ease 2.5s red-stretch forwards; }
 
 h4 {
   margin-left: 0.75em; }
@@ -50,7 +48,9 @@ a {
     text-align: right; }
 
 .right-container {
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  background: white;
+  padding-left: 1.5em; }
 
 .profile-image {
   position: fixed;
@@ -62,7 +62,7 @@ a {
   margin: 5em auto 0;
   display: none; }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   .profile-image {
     display: none; }
   h2, h3, h4 {
@@ -84,7 +84,8 @@ a {
     text-align: center; }
   .right-container {
     display: inline-block;
-    text-align: left; }
+    text-align: left;
+    padding-left: 0; }
   h2 {
     font-size: 1.5em; }
   .single-image {
@@ -92,3 +93,9 @@ a {
   .title-card {
     display: table;
     margin: 2em auto; } }
+
+@keyframes red-stretch {
+  0% {
+    width: 0; }
+  100% {
+    width: 80px; } }

@@ -28,10 +28,10 @@ h1:before {
   position: absolute;
   bottom: -0.4em;
   right: -1em;
-  width: 2em;
+  // width: 15px;
   height: 5px;
   background-color: #337ab7;
-  z-index: -1;
+  animation: 1.5s ease 1s red-stretch forwards;
 }
 
 h2:before {
@@ -39,10 +39,10 @@ h2:before {
   position: absolute;
   bottom: -0.5em;
   left: -0.3em;
-  width: 2em;
+  // width: 15px;
   height: 5px;
   background-color: #800000;
-  z-index: -1;
+  animation: 1.5s ease 2.5s red-stretch forwards;
 }
 
 h4 {
@@ -69,6 +69,8 @@ a {
 
 .right-container {
   margin-bottom: 5em;
+  background: white;
+  padding-left: 1.5em;
 }
 
 .profile-image {
@@ -83,7 +85,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   .profile-image {
     display: none;
   }
@@ -116,6 +118,7 @@ a {
   .right-container {
     display: inline-block;
     text-align: left;
+    padding-left: 0;
   }
 
   h2 {
@@ -130,5 +133,16 @@ a {
     display: table;
     margin: 2em auto;
     // border: 1px solid;
+  }
+}
+
+@keyframes red-stretch {
+  0% {
+    width: 0;
+    // width: 15px;
+  }
+
+  100% {
+    width: 80px;
   }
 }
