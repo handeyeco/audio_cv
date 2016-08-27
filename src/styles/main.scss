@@ -5,6 +5,7 @@ $boring-font: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, ser
 
 body {
   font-family: $boring-font;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -68,7 +69,6 @@ a {
 
 .right-container {
   margin-bottom: 5em;
-  // max-width: 85%
 }
 
 .profile-image {

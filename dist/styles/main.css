@@ -1,5 +1,6 @@
 body {
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  width: 100%; }
 
 h1, h2, h3, h4 {
   font-family: "Playfair Display", Times, Baskerville, Georgia, serif; }
