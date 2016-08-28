@@ -1,8 +1,6 @@
 $fancy-font: 'Playfair Display', Times, Baskerville, Georgia, serif;
 $boring-font: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 
-// * { border: 1px solid blue; }
-
 body {
   font-family: $boring-font;
   width: 100%;
@@ -18,7 +16,6 @@ h2, h3 {
 }
 
 h1 {
-  // border-bottom: 1px solid;
   margin-bottom: 0.75em;
   position: relative;
 }
@@ -100,7 +97,7 @@ a {
     left: 0;
     height: 100vh;
     width: 50%;
-    background: url('../images/photobooth_no_border.jpg');
+    background: url('../images/photobooth_transparent_small_min.png');
     background-position: center top;
     background-size: cover;
   }
@@ -132,14 +129,12 @@ a {
   .title-card {
     display: table;
     margin: 2em auto;
-    // border: 1px solid;
   }
 }
 
 @keyframes red-stretch {
   0% {
     width: 0;
-    // width: 15px;
   }
 
   100% {
