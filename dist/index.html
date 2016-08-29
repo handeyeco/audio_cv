@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Matthew Curtis | Portland Audio Engineer</title>
-
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
 
+    <!-- SEO Stuff -->
+    <meta name="author" content="Matthew Curtis" />
+    <meta name="description" content="Matthew Curtis, experienced Audio Engineer out of Portland, OR." />
+    <meta name="keywords" content="Audio, Engineering, Live, Sound, Portland, Oregon, OR, Audio, Reinforcement, Digital, Analog, Venue, Band, Tour, Corporate, Film, Broadcast" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="14 days" />
+
+    <!-- I put this here exclusively for Facebook -->
+    <meta property="og:title" content="Matthew Curtis | Portland Audio Engineer" />
+    <meta property="og:url" content="http://www.matthew.intheairmusic.com" />
+    <meta property="og:image" content="http://www.matthew.intheairmusic.com/images/header_og_min.png" />
+    <meta property="og:site_name" content="Matthew Curtis" />
+    <meta property="og:description" content="Matthew Curtis, experienced Audio Engineer out of Portland, OR." />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Matthew Curtis | Portland Audio Engineer</title>
 </head>
 
 <body>
@@ -196,6 +210,32 @@
     <img src="images/photobooth_footer_small_min.png" alt="Picture of Matthew Curtis" class="single-image" />
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <script>
+      window.onload = function () {
+
+        //Replace Photobooth image with higher resolution
+        //Check window width (only updating image on bigger screens)
+        if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > 768) {
+          //Create image
+          var lgPhotobooth = new Image();
+          lgPhotobooth.src = "./images/photobooth_transparent.png";
+
+          //When image is loaded, replace element sources with large image
+          lgPhotobooth.addEventListener('load', function () {
+            var profileImage = document.getElementById('profile-image'),
+                leftContainer = document.getElementById('left-container'),
+                newSource = "./images/photobooth_transparent_min.png";
+
+            profileImage.src = newSource;
+            leftContainer.style.background = "url('" + newSource + "')";
+            console.log("Image loaded");
+          });
+        }
+
+      }
+    </script>
+
 </body>
 
 </html>
