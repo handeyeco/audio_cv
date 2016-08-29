@@ -99,7 +99,7 @@ a {
     left: 0;
     height: 100vh;
     width: 50%;
-    background: url('../images/photobooth_transparent_small_min.png'); /*Maybe this can stay small since it's for smaller screens?*/
+    background-image: url('../images/photobooth_transparent_small_min.png');
     background-position: center top;
     background-size: cover;
   }
@@ -107,7 +107,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .left-container {
-    background: none;
+    display: none;
   }
 
   .col-sm-6 {
